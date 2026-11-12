@@ -15,13 +15,9 @@
       <li><a class="lien-menu" href="contact.php">Contact</a></li>
     </ul>
   </nav>
-  <h1>Contact</h1>
-
-  <h2>Nous joindre</h2>
-  <ul>
-    <li>Téléphone : 05 55 00 00 00</li>
-    <li>Adresse : 12 avenue de la République, 19100 Brive-la-Gaillarde</li>
-  </ul>
+  <h2>Nos coordonnées</h2>
+    <p><strong>Téléphone :</strong> <?php echo  $05 55 00 00 00; ?></p>
+    <p><strong>Adresse :</strong> <?php echo $12 avenue de la République, 19100 Brive-la-Gaillarde; ?></p>
 
   <h2>Horaires d'ouverture</h2>
   <ul>
@@ -29,6 +25,5 @@
     <li>Samedi et dimanche : fermé</li>
   </ul>
 
-  <p>TechSolutions · 12 avenue de la République, 19100 Brive-la-Gaillarde · 05 55 00 00 00</p>
 </body>
 </html>
