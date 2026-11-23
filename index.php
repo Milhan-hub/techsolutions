@@ -1,5 +1,3 @@
-<?php
-$pdo = new PDO("mysql:host=localhost;dbname=techsolutions;charset=utf8mb4", "root", "");
 <!DOCTYPE html>
 <html lang="fr">
 <head>

@@ -1,3 +1,5 @@
+  <?php include "inc/infos.php"; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,17 +9,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <ul class="menu">
-       <li><a class="lien-menu" href="index.php">Accueil</a></li>
-      <li><a class="lien-menu" href="services.php">Nos services</a></li>
-      <li><a class="lien-menu" href="entreprise.php">L'entreprise</a></li>
-      <li><a class="lien-menu" href="contact.php">Contact</a></li>
-    </ul>
+  <?php include "inc/menu.php"; ?>
   </nav>
   <h2>Nos coordonnées</h2>
-    <p><strong>Téléphone :</strong> <?php echo  $05 55 00 00 00; ?></p>
-    <p><strong>Adresse :</strong> <?php echo $12 avenue de la République, 19100 Brive-la-Gaillarde; ?></p>
+    <p><strong>Téléphone :</strong> <?php echo  $telephone; ?></p>
+    <p><strong>Adresse :</strong> <?php echo $adresse; ?></p>
 
   <h2>Horaires d'ouverture</h2>
   <ul>

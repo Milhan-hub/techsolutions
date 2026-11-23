@@ -1,3 +1,12 @@
+<?php
+include "inc/infos.php";
+
+// Les tarifs hors taxes et le taux de TVA, écrits une seule fois
+$essentiel = 60;
+$serenite = 150;
+$premium = 290;
+$tva = 20;
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,17 +16,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <ul class="menu">
-   
-    <li><a class="lien-menu" href="index.php">Accueil</a></li>
-        <li><a class="lien-menu" href="services.php">Nos services</a></li>
-        <li><a class="lien-menu" href="entreprise.php">L'entreprise</a></li>
-        <li><a class="lien-menu" href="contact.php">Contact</a></li>
-
-  
-    </ul>
-  </nav>
+  <?php include "inc/menu.php"; ?>
   <h1>Nos services</h1>
 
   <h2>Ce que nous proposons</h2>
@@ -33,22 +32,26 @@
     <tr>
       <th>Formule</th>
       <th>Contenu</th>
-      <th>Prix par mois</th>
+      <th>Tarif HT</th>
+      <th>Tarif TTC</th>
     </tr>
     <tr>
       <td>Essentielle</td>
       <td>Dépannage à la demande</td>
       <td>49 €</td>
+      <td><?php echo $essentiel * (1 + $tva / 100); ?> €</td>
     </tr>
     <tr>
       <td>Confort</td>
       <td>Dépannage et maintenance</td>
       <td>99 €</td>
+      <td><?php echo $serenite * (1 + $tva / 100); ?> €</td>
     </tr>
     <tr>
       <td>Sérénité</td>
       <td>Dépannage, maintenance et sauvegarde</td>
       <td>149 €</td>
+      <td><?php echo $premium * (1 + $tva / 100); ?> €</td>
     </tr>
   </table>
 

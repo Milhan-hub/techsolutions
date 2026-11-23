@@ -1,1 +1,1 @@
-<p id="pied"><?php echo $entreprise . " - " . $ville . " - " . $telephone; ?></p>
+  <p id="pied"><?php echo $entreprise . " - " . $ville . " - " . $telephone . " - " . $date; ?></p>
