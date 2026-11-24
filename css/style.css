@@ -48,3 +48,26 @@ nav {
   font-weight: bold;
   text-decoration: none;
 }
+
+.formulaire {
+  background-color: #c5ccd3;
+  padding: 10px 20px;
+  max-width: 400px;
+}
+
+
+input {
+  width: 300px;
+  padding: 8px;
+  color: #c5ccd3;
+}
+button {
+  background-color: #e67e22;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+}
+.erreur {
+  color: red;
+  font-weight: bold;
+}

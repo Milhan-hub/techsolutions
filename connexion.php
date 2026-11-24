@@ -12,7 +12,7 @@
   <?php include "inc/menu.php"; ?>
   <title>TechSolutions : espace salariés</title>
   <h1>espace salariés</h1>
-      <form action="verifier.php" method="post">
+      <form class="formulaire" action="verifier.php" method="post">
       <p>
         <label for="identifiant">Identifiant</label><br>
         <input type="text" id="identifiant" name="identifiant" required>

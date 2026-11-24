@@ -1,7 +1,18 @@
 <?php
+session_start();
+
+// Page réservée aux personnes connectées...
+if (!isset($_SESSION["id"])) {
+    header("Location: connexion.php");
+    exit;
+}
+// ... et, parmi elles, à l'administrateur
+if ($_SESSION["role"] != "admin") {
+    header("Location: espace.php");
+    exit;
+}
 include "inc/infos.php";
 require "inc/bdd.php";
-
 $requete = $pdo->query("SELECT prenom, nom, service, role FROM utilisateurs ORDER BY nom");
 $utilisateurs = $requete->fetchAll();
 ?>
@@ -43,8 +54,9 @@ $utilisateurs = $requete->fetchAll();
       </tr>
       <?php } ?>
     </table>
-  <h2>Notre équipe</h2>
-  <ul>
+    <a href="espace.php">Retour à mon espace</a>
+    <h2>Notre équipe</h2>
+    <ul>
     <li>Un responsable technique</li>
     <li>Deux techniciens de maintenance</li>
     <li>Un conseiller clientèle</li>
